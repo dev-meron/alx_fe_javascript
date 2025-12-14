@@ -182,7 +182,7 @@ function importFromJsonFile(event) {
 // =====================================
 // Server Sync Functions
 // =====================================
-async function fetchServerQuotes() {
+async function fetchQuotesFromServer() {
   const response = await fetch(SERVER_URL);
   const data = await response.json();
 
@@ -257,3 +257,4 @@ populateCategories();
 filterQuotes();
 syncWithServer();
 setInterval(syncWithServer, 20000);
+
