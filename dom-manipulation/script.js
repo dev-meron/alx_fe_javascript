@@ -215,7 +215,7 @@ function resolveConflicts(serverQuotes) {
   }
 }
 
-async function syncWithServer() {
+async function syncQuotes() {
   showSyncMessage("Syncing with server...");
 
   try {
@@ -257,4 +257,5 @@ populateCategories();
 filterQuotes();
 syncWithServer();
 setInterval(syncWithServer, 20000);
+
 
