@@ -13,6 +13,11 @@
   <span style="display:none;">Export Quotes</span>
   <input type="file" style="display:none;">
 
+  <!-- Category Filter -->
+  <select id="categoryFilter" onchange="filterQuotes()">
+    <option value="all">All Categories</option>
+  </select>
+
   <div id="quoteDisplay"></div>
 
   <button id="newQuote">New Quote</button>
