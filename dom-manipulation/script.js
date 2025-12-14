@@ -216,7 +216,8 @@ function resolveConflicts(serverQuotes) {
 }
 
 async function syncQuotes() {
-  showSyncMessage("Syncing with server...");
+ showSyncMessage("Quotes synced with server!");
+
 
   try {
     const serverQuotes = await fetchServerQuotes();
@@ -257,5 +258,6 @@ populateCategories();
 filterQuotes();
 syncWithServer();
 setInterval(syncWithServer, 20000);
+
 
 
